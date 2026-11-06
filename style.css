@@ -43,3 +43,10 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
 .app img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
 footer { max-width: 720px; margin: 0 auto; padding: 24px 16px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.8; }
 footer p { margin: 0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+.apps-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; }
+.apps-nav a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--fg); padding: 6px 12px 6px 6px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; }
+.apps-nav img { width: 28px; height: 28px; border-radius: 7px; }

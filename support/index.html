@@ -1,112 +1,117 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-lang="ko" data-title-ko="도움말 · 민들레스튜디오" data-title-en="Help · Mindeulle Studio">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>민들레스튜디오 도움말 · Help</title>
+<title>도움말 · Help</title>
 <meta name="description" content="KokCut, PaceGraphy 자주 묻는 질문과 문의 / FAQ and contact">
+<link rel="icon" href="../img/kokcut.png">
 <link rel="stylesheet" href="../style.css">
+<script src="../lang.js"></script>
 </head>
 <body>
-<main>
-  <nav class="lang"><a href="#ko">한국어</a><a href="#en">English</a><a href="../privacy/">개인정보 · Privacy</a></nav>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><i></i><span class="ko">민들레스튜디오</span><span class="en">Mindeulle Studio</span></a>
+  <nav>
+    <a href="../support/" aria-current="page"><span class="ko">도움말</span><span class="en">Help</span></a>
+    <a href="../privacy/"><span class="ko">개인정보</span><span class="en">Privacy</span></a>
+    <button class="lang-btn" type="button"><span class="ko">English</span><span class="en">한국어</span></button>
+  </nav>
+</div></header>
 
-  <section id="ko" lang="ko">
-    <h1>도움말</h1>
-    <div class="apps-nav">
-      <a href="#kokcut"><img src="../img/kokcut.png" alt="">KokCut</a>
-      <a href="#pacegraphy"><img src="../img/pacegraphy.png" alt="">PaceGraphy</a>
-      <a href="#contact">문의</a>
-    </div>
+<main class="wrap">
 
-    <h2 id="kokcut">KokCut 콕컷</h2>
-    <p>여러 영상에서 좋은 순간만 골라 하나로 합치고, 사진이나 영상 위에 사진을 얹는 앱이에요.</p>
+<!-- 한국어 -->
+<div class="ko">
+  <h1>무엇을 도와드릴까요?</h1>
+  <p class="lead">자주 묻는 질문을 앱별로 모았어요. 답을 찾지 못하면 메일로 물어봐 주세요.</p>
+  <div class="chips">
+    <a href="#kokcut"><img src="../img/kokcut.png" alt="">KokCut</a>
+    <a href="#pacegraphy"><img src="../img/pacegraphy.png" alt="">PaceGraphy</a>
+    <a class="plain" href="#contact">문의하기</a>
+  </div>
 
-    <h3>만든 영상은 어디에 저장되나요?</h3>
-    <p>iPhone은 사진 앱, Android는 갤러리에 저장돼요. 영상 합치기는 "내보내기", 사진 넣기는 "저장"을 누르면 돼요.</p>
-
-    <h3>저장이 안 돼요.</h3>
-    <p>사진 접근이 꺼져 있으면 저장할 수 없어요. iPhone은 설정 앱 &gt; KokCut &gt; 사진에서, Android는 설정 &gt; 앱 &gt; KokCut &gt; 권한에서 사진 접근을 허용해 주세요. 휴대폰 저장 공간이 부족해도 저장이 안 될 수 있어요.</p>
-
-    <h3>KokCut PRO를 샀는데 다시 결제하라고 나와요.</h3>
-    <p>앱을 다시 설치했거나 휴대폰을 바꿨다면, 결제 창 아래의 "구매 복원"을 눌러 주세요. 처음 구매한 계정(Apple ID 또는 Google 계정)으로 로그인되어 있어야 해요.</p>
-
-    <h3>PRO는 매달 결제되나요?</h3>
-    <p>아니요. 한 번만 사면 계속 쓸 수 있어요. 고르고, 만들고, 미리 보는 것까지는 무료이고 PRO 옵션으로 만든 영상을 저장할 때만 구매해요.</p>
-
-    <h3>"배경 지우기 &gt; 피사체만"이 안 보여요.</h3>
-    <p>iPhone은 iOS 17 이상에서 쓸 수 있어요. 단색 배경 지우기는 모든 기기에서 돼요.</p>
-
-    <h2 id="pacegraphy">PaceGraphy 페이스그라피</h2>
-    <p>러닝 앱 기록 캡처 한 장으로, 오늘 달린 기록을 사진과 영상 위에 넣는 앱이에요.</p>
-
-    <h3>만든 사진·영상은 어디에 저장되나요?</h3>
-    <p>iPhone은 사진 앱, Android는 갤러리에 저장돼요. 저장이 안 되면 설정에서 PaceGraphy의 사진 접근을 허용해 주세요.</p>
-
-    <h3>기록 숫자가 잘못 읽혀요.</h3>
-    <p>거리·시간·페이스가 잘 보이는 기록 화면을 캡처해 주세요. 그래도 틀리면 어떤 러닝 앱의 캡처인지 알려 주시면 고쳐 볼게요.</p>
-
-    <h2>공통</h2>
-    <h3>제 사진과 영상이 어딘가로 보내지나요?</h3>
-    <p>아니요. 모든 편집은 휴대폰 안에서만 이루어져요. 자세한 내용은 <a href="../privacy/">개인정보 처리방침</a>을 봐 주세요.</p>
-
-    <h2 id="contact">문의</h2>
-    <div class="card">
-      <p><a href="mailto:inwoox@gmail.com">inwoox@gmail.com</a></p>
-      <p class="muted">앱 이름, 기기 종류, OS 버전, 어떤 화면에서 무엇을 했는지 적어 주시면 더 빨리 도와드릴 수 있어요.</p>
+  <section id="kokcut" style="margin-top:44px">
+    <div class="app-head"><img src="../img/kokcut.png" alt=""><div><b>KokCut 콕컷</b><span>좋은 순간만 콕, 영상 합치기·사진 넣기</span></div></div>
+    <div class="faq">
+      <details><summary>만든 영상은 어디에 저장되나요?</summary><div class="answer"><p>iPhone은 사진 앱, Android는 갤러리에 저장돼요. 영상 합치기는 "내보내기", 사진 넣기는 "저장"을 누르면 돼요.</p></div></details>
+      <details><summary>저장이 안 돼요.</summary><div class="answer"><p>사진 접근이 꺼져 있으면 저장할 수 없어요. iPhone은 설정 앱 &gt; KokCut &gt; 사진에서, Android는 설정 &gt; 앱 &gt; KokCut &gt; 권한에서 사진 접근을 허용해 주세요. 휴대폰 저장 공간이 부족해도 저장이 안 될 수 있어요.</p></div></details>
+      <details><summary>PRO를 샀는데 다시 결제하라고 나와요.</summary><div class="answer"><p>앱을 다시 설치했거나 휴대폰을 바꿨다면, 결제 창 아래의 "구매 복원"을 눌러 주세요. 처음 구매한 계정(Apple ID 또는 Google 계정)으로 로그인되어 있어야 해요.</p></div></details>
+      <details><summary>PRO는 매달 결제되나요?</summary><div class="answer"><p>아니요. 한 번만 사면 계속 쓸 수 있어요. 고르고, 만들고, 미리 보는 것까지는 무료이고 PRO 옵션으로 만든 영상을 저장할 때만 구매해요.</p></div></details>
+      <details><summary>"배경 지우기 &gt; 피사체만"이 안 보여요.</summary><div class="answer"><p>iPhone은 iOS 17 이상에서 쓸 수 있어요. 단색 배경 지우기는 모든 기기에서 돼요.</p></div></details>
     </div>
   </section>
 
-  <hr>
-
-  <section id="en" lang="en">
-    <h1>Help</h1>
-    <div class="apps-nav">
-      <a href="#kokcut-en"><img src="../img/kokcut.png" alt="">KokCut</a>
-      <a href="#pacegraphy-en"><img src="../img/pacegraphy.png" alt="">PaceGraphy</a>
-      <a href="#contact-en">Contact</a>
+  <section id="pacegraphy">
+    <div class="app-head"><img src="../img/pacegraphy.png" alt=""><div><b>PaceGraphy 페이스그라피</b><span>러닝 기록을 사진·영상 위에</span></div></div>
+    <div class="faq">
+      <details><summary>만든 사진·영상은 어디에 저장되나요?</summary><div class="answer"><p>iPhone은 사진 앱, Android는 갤러리에 저장돼요. 저장이 안 되면 설정에서 PaceGraphy의 사진 접근을 허용해 주세요.</p></div></details>
+      <details><summary>기록 숫자가 잘못 읽혀요.</summary><div class="answer"><p>거리·시간·페이스가 잘 보이는 기록 화면을 캡처해 주세요. 그래도 틀리면 어떤 러닝 앱의 캡처인지 알려 주시면 고쳐 볼게요.</p></div></details>
     </div>
+  </section>
 
-    <h2 id="kokcut-en">KokCut</h2>
-    <p>KokCut picks the best moments from your videos and joins them into one, or puts a photo on top of a photo or video.</p>
+  <section>
+    <h2>모든 앱</h2>
+    <div class="faq" style="margin-top:12px">
+      <details><summary>제 사진과 영상이 어딘가로 보내지나요?</summary><div class="answer"><p>아니요. 모든 편집은 휴대폰 안에서만 이루어져요. 자세한 내용은 <a href="../privacy/">개인정보 처리방침</a>을 봐 주세요.</p></div></details>
+    </div>
+  </section>
 
-    <h3>Where are my videos saved?</h3>
-    <p>On iPhone, in the Photos app. On Android, in your gallery. Tap "Export" in Merge Videos or "Save" in Add a Photo.</p>
+  <div class="contact" id="contact">
+    <h2>답을 찾지 못하셨나요?</h2>
+    <p>앱 이름, 기기 종류, OS 버전, 어떤 화면에서 무엇을 했는지 적어 주시면 더 빨리 도와드릴 수 있어요.</p>
+    <a class="btn" href="mailto:inwoox@gmail.com">메일 보내기</a>
+    <span class="mail">inwoox@gmail.com</span>
+  </div>
+</div>
 
-    <h3>Saving doesn't work.</h3>
-    <p>KokCut needs photo access to save. On iPhone, go to Settings &gt; KokCut &gt; Photos. On Android, go to Settings &gt; Apps &gt; KokCut &gt; Permissions. Saving can also fail when your phone is low on storage.</p>
+<!-- English -->
+<div class="en">
+  <h1>How can we help?</h1>
+  <p class="lead">Common questions for each app. If you can't find an answer, send us an email.</p>
+  <div class="chips">
+    <a href="#kokcut-en"><img src="../img/kokcut.png" alt="">KokCut</a>
+    <a href="#pacegraphy-en"><img src="../img/pacegraphy.png" alt="">PaceGraphy</a>
+    <a class="plain" href="#contact-en">Contact</a>
+  </div>
 
-    <h3>I bought KokCut PRO, but it asks me to pay again.</h3>
-    <p>If you reinstalled the app or switched phones, tap "Restore purchase" at the bottom of the purchase sheet. Make sure you're signed in with the Apple ID or Google account you bought it with.</p>
+  <section id="kokcut-en" style="margin-top:44px">
+    <div class="app-head"><img src="../img/kokcut.png" alt=""><div><b>KokCut</b><span>Merge clips. Add photos.</span></div></div>
+    <div class="faq">
+      <details><summary>Where are my videos saved?</summary><div class="answer"><p>On iPhone, in the Photos app. On Android, in your gallery. Tap "Export" in Merge Videos or "Save" in Add a Photo.</p></div></details>
+      <details><summary>Saving doesn't work.</summary><div class="answer"><p>KokCut needs photo access to save. On iPhone, go to Settings &gt; KokCut &gt; Photos. On Android, go to Settings &gt; Apps &gt; KokCut &gt; Permissions. Saving can also fail when your phone is low on storage.</p></div></details>
+      <details><summary>I bought PRO, but it asks me to pay again.</summary><div class="answer"><p>If you reinstalled the app or switched phones, tap "Restore purchase" at the bottom of the purchase sheet. Make sure you're signed in with the Apple ID or Google account you bought it with.</p></div></details>
+      <details><summary>Is PRO a subscription?</summary><div class="answer"><p>No. Buy it once and keep it. Choosing, creating, and previewing are free; you only buy when you save a video made with PRO options.</p></div></details>
+      <details><summary>I don't see "Remove BG &gt; Subject only".</summary><div class="answer"><p>On iPhone, it needs iOS 17 or later. Removing a single-color background works on every device.</p></div></details>
+    </div>
+  </section>
 
-    <h3>Is PRO a subscription?</h3>
-    <p>No. Buy it once and keep it. Choosing, creating, and previewing are free; you only buy when you save a video made with PRO options.</p>
+  <section id="pacegraphy-en">
+    <div class="app-head"><img src="../img/pacegraphy.png" alt=""><div><b>PaceGraphy</b><span>Run stats on photos &amp; videos</span></div></div>
+    <div class="faq">
+      <details><summary>Where are my photos and videos saved?</summary><div class="answer"><p>On iPhone, in the Photos app. On Android, in your gallery. If saving fails, allow photo access for PaceGraphy in Settings.</p></div></details>
+      <details><summary>The numbers are read wrong.</summary><div class="answer"><p>Use a screenshot where distance, time, and pace are clearly visible. If it's still wrong, tell us which running app the screenshot came from and we'll look into it.</p></div></details>
+    </div>
+  </section>
 
-    <h3>I don't see "Remove BG &gt; Subject only".</h3>
-    <p>On iPhone, it needs iOS 17 or later. Removing a single-color background works on every device.</p>
-
-    <h2 id="pacegraphy-en">PaceGraphy</h2>
-    <p>PaceGraphy reads one screenshot from your running app and puts today's run stats on your photos and videos.</p>
-
-    <h3>Where are my photos and videos saved?</h3>
-    <p>On iPhone, in the Photos app. On Android, in your gallery. If saving fails, allow photo access for PaceGraphy in Settings.</p>
-
-    <h3>The numbers are read wrong.</h3>
-    <p>Use a screenshot where distance, time, and pace are clearly visible. If it's still wrong, tell us which running app the screenshot came from and we'll look into it.</p>
-
+  <section>
     <h2>All apps</h2>
-    <h3>Are my photos and videos sent anywhere?</h3>
-    <p>No. Everything is edited on your phone. See the <a href="../privacy/#en">privacy policy</a> for details.</p>
-
-    <h2 id="contact-en">Contact</h2>
-    <div class="card">
-      <p><a href="mailto:inwoox@gmail.com">inwoox@gmail.com</a></p>
-      <p class="muted">Tell us the app name, your device, OS version, and what you did on which screen, and we can help faster.</p>
+    <div class="faq" style="margin-top:12px">
+      <details><summary>Are my photos and videos sent anywhere?</summary><div class="answer"><p>No. Everything is edited on your phone. See the <a href="../privacy/">privacy policy</a> for details.</p></div></details>
     </div>
   </section>
+
+  <div class="contact" id="contact-en">
+    <h2>Didn't find your answer?</h2>
+    <p>Tell us the app name, your device, OS version, and what you did on which screen, and we can help faster.</p>
+    <a class="btn" href="mailto:inwoox@gmail.com">Send an email</a>
+    <span class="mail">inwoox@gmail.com</span>
+  </div>
+</div>
+
 </main>
-<footer>
-  <p>문의 · Contact: <a href="mailto:inwoox@gmail.com">inwoox@gmail.com</a></p>
-</footer>
+<footer><div class="wrap">
+  <span class="ko">문의</span><span class="en">Contact</span> · <a href="mailto:inwoox@gmail.com">inwoox@gmail.com</a>
+</div></footer>
 </body>
 </html>

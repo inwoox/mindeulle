@@ -1,41 +1,50 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-lang="ko" data-title-ko="민들레스튜디오" data-title-en="Mindeulle Studio">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mindeulle Studio</title>
 <meta name="description" content="민들레스튜디오(Mindeulle Studio)가 만든 앱">
+<link rel="icon" href="img/kokcut.png">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
-<main>
-  <h1>민들레스튜디오</h1>
-  <p class="muted" lang="en">Mindeulle Studio</p>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><i></i><span class="ko">민들레스튜디오</span><span class="en">Mindeulle Studio</span></a>
+  <nav>
+    <a href="support/"><span class="ko">도움말</span><span class="en">Help</span></a>
+    <a href="privacy/"><span class="ko">개인정보</span><span class="en">Privacy</span></a>
+    <button class="lang-btn" type="button"><span class="ko">English</span><span class="en">한국어</span></button>
+  </nav>
+</div></header>
 
-  <div class="card">
-    <div class="app">
-      <img src="img/kokcut.png" alt="KokCut 아이콘">
-      <div>
-        <h3>KokCut 콕컷</h3>
-        <p>좋은 순간만 콕, 영상 합치기·사진 넣기<br><span class="muted" lang="en">Merge clips. Add photos.</span></p>
-      </div>
-    </div>
+<main class="wrap">
+  <div class="ko">
+    <h1>작고 쓸모 있는 앱을 만들어요</h1>
+    <p class="lead">민들레스튜디오가 만든 앱이에요.</p>
+  </div>
+  <div class="en">
+    <h1>Small, useful apps</h1>
+    <p class="lead">Apps made by Mindeulle Studio.</p>
   </div>
 
-  <div class="card">
-    <div class="app">
-      <img src="img/pacegraphy.png" alt="PaceGraphy 아이콘">
-      <div>
-        <h3>PaceGraphy 페이스그라피</h3>
-        <p>러닝 기록을 사진·영상 위에<br><span class="muted" lang="en">Run stats on photos &amp; videos</span></p>
-      </div>
-    </div>
+  <div class="apps">
+    <a class="card" href="support/#kokcut">
+      <div class="app-head"><img src="img/kokcut.png" alt=""><div><b>KokCut <span class="ko" style="display:inline;color:inherit;font-size:inherit">콕컷</span></b><span class="ko">좋은 순간만 콕, 영상 합치기·사진 넣기</span><span class="en">Merge clips. Add photos.</span></div></div>
+    </a>
+    <a class="card" href="support/#pacegraphy">
+      <div class="app-head"><img src="img/pacegraphy.png" alt=""><div><b>PaceGraphy <span class="ko" style="display:inline;color:inherit;font-size:inherit">페이스그라피</span></b><span class="ko">러닝 기록을 사진·영상 위에</span><span class="en">Run stats on photos &amp; videos</span></div></div>
+    </a>
   </div>
 
-  <p><a href="support/">도움말 · Help</a> &nbsp;·&nbsp; <a href="privacy/">개인정보 처리방침 · Privacy Policy</a></p>
+  <div class="links">
+    <a href="support/"><span class="ko">도움말</span><span class="en">Help</span></a>
+    <a href="privacy/"><span class="ko">개인정보 처리방침</span><span class="en">Privacy Policy</span></a>
+  </div>
 </main>
-<footer>
-  <p>문의 · Contact: <a href="mailto:inwoox@gmail.com">inwoox@gmail.com</a></p>
-</footer>
+<footer><div class="wrap">
+  <span class="ko">문의</span><span class="en">Contact</span> · <a href="mailto:inwoox@gmail.com">inwoox@gmail.com</a>
+</div></footer>
 </body>
 </html>

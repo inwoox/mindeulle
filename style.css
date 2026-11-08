@@ -140,3 +140,22 @@ footer a { color: var(--muted); text-decoration: underline; text-underline-offse
   .lead { font-size: 16px; }
   .top nav a.hide-sm { display: none; }
 }
+
+/* 테스트 참여 단계 */
+.steps { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; counter-reset: step; }
+.steps > li { margin: 0; padding: 20px; border: 1px solid var(--line); border-radius: var(--radius); counter-increment: step; }
+.steps h2 { display: flex; align-items: center; gap: 10px; font-size: 18px; margin: 0 0 6px; }
+.steps h2::before { content: counter(step); flex: none; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 9px; background: var(--fg); color: var(--bg); font-size: 15px; font-weight: 800; }
+.steps p { color: var(--sub); font-size: 15px; margin: 0 0 12px; }
+.steps .btn { margin-top: 2px; }
+.btn.block { display: block; text-align: center; }
+.btn.ghost { background: var(--soft); color: var(--fg); }
+.note { margin-top: 20px; padding: 16px 18px; border-radius: 14px; background: var(--accent-soft); color: var(--accent-ink); font-size: 15px; }
+.note strong { color: inherit; }
+.share { margin-top: 40px; padding: 24px; border-radius: var(--radius); background: var(--soft); text-align: center; }
+.share img { width: 168px; height: 168px; border-radius: 12px; background: #fff; padding: 10px; margin: 12px auto 4px; display: block; }
+.share .row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 12px; }
+.share button { font: inherit; font-size: 15px; font-weight: 600; border: 0; border-radius: 12px; padding: 12px 18px; cursor: pointer; background: var(--fg); color: var(--bg); }
+.share button.ghost { background: var(--bg); color: var(--fg); border: 1px solid var(--line); }
+.toast { position: fixed; left: 50%; bottom: 32px; transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.toast.show { opacity: 1; }

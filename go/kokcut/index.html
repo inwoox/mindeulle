@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KokCut 받기</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="KokCut — App Store · Google Play">
+<meta property="og:description" content="좋은 순간만 콕, 영상 하나로">
+<meta property="og:image" content="https://inwoox.github.io/mindeulle/img/kokcut.png">
+<link rel="icon" href="../../img/kokcut.png">
+<script src="../../apps.js"></script>
+<script>
+// 바로가기: 아이폰 → App Store, 안드로이드 → Google Play, 그 밖(또는 아직 출시 전) → 앱 받기 페이지
+(function () {
+  var a = window.APPS["kokcut"], p = window.devicePlatform();
+  var s = p === "ios" || p === "android" ? a[p] : null;
+  var q = location.search;
+  location.replace(s && s.live ? window.storeUrl(p, s.url) : "../../links/" + q + "#kokcut");
+})();
+</script>
+</head>
+<body style="font-family:-apple-system,sans-serif;padding:24px">
+<p><a href="../../links/#kokcut">KokCut 받기</a></p>
+</body>
+</html>

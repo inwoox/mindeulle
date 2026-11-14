@@ -16,7 +16,7 @@ window.APPS = {
     icon: "img/kokcut.png",
     ko: "좋은 순간만 콕 찍으면, 영상 여러 개가 하나로",
     en: "Tap the best moments. Get one video.",
-    ios: { url: "https://apps.apple.com/app/id6826712066", live: false },
+    ios: { url: "https://apps.apple.com/app/id6826712066", live: true },  // 2026-11-14 App Store 출시
     android: { url: "https://play.google.com/store/apps/details?id=com.kokcut.kokcut", live: false, test: "kokcut-test/" }
   }
 };

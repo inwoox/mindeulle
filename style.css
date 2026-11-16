@@ -191,3 +191,4 @@ html[data-lang="en"] .app-head .inline { display: none !important; }
 .promo .promo-os { display: block; font-size: 15px; margin: 14px 0 6px; }
 .promo ol { margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.7; }
 .promo ol li { margin: 2px 0; }
+.promo .promo-note { color: var(--sub); font-size: 14px; margin: 0 0 6px; }

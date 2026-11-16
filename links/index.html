@@ -47,6 +47,16 @@
     <h2><span class="ko">프로모션 코드 사용 방법</span><span class="en">How to redeem a promo code</span></h2>
     <p class="promo-sub"><span class="ko">KokCut PRO 같은 앱 안 구매를 코드로 받았다면. 코드는 iPhone용과 Android용이 따로 있어요 — 받은 코드에 맞는 폰에서 써 주세요.</span><span class="en">If you got a code for something like KokCut PRO. iPhone and Android codes are different — use yours on the matching phone.</span></p>
     <b class="promo-os">iPhone</b>
+    <!-- 2026-11-16: 코드 교환에 직접 넣으면 '유효하지 않음'이 뜨는 경우가 있어, 앱 지정 교환 링크(redeem?ctx=offercodes)로 여는 게 확실하다 -->
+    <form class="redeem" id="redeem" autocomplete="off">
+      <label for="code"><span class="ko">코드를 넣고 바로 쓰기 (KokCut)</span><span class="en">Enter your code and redeem (KokCut)</span></label>
+      <div class="redeem-row">
+        <input id="code" name="code" type="text" inputmode="latin" autocapitalize="characters" spellcheck="false" placeholder="KOKCUT…" maxlength="64">
+        <button type="submit"><span class="ko">바로 쓰기</span><span class="en">Redeem</span></button>
+      </div>
+      <p class="promo-note"><span class="ko">iPhone에서 누르면 App Store가 열리고 코드가 들어가 있어요. 확인만 누르면 돼요.</span><span class="en">On iPhone, the App Store opens with your code filled in. Just confirm.</span></p>
+    </form>
+    <p class="promo-note"><span class="ko">직접 넣고 싶다면:</span><span class="en">Or enter it yourself:</span></p>
     <ol class="ko">
       <li>App Store 앱을 열고 오른쪽 위 <b>프로필 사진</b>을 눌러요</li>
       <li>아래쪽 <b>코드 교환</b>을 눌러요 (예전 iOS: 기프트 카드 또는 코드 사용)</li>
@@ -122,6 +132,21 @@
       '<div class="store-row">' + order.map(function (s) { return button(s, a[s]); }).join("") + '</div>' + extra + '</section>';
   });
   document.getElementById("list").innerHTML = html;
+})();
+// 프로모션 코드 바로 쓰기: App Store 앱 지정 교환 링크로 연다. ?code=… 로 들어오면 칸을 미리 채운다
+(function () {
+  var APP_ID = "6826712066"; // KokCut
+  var f = document.getElementById("redeem"), box = document.getElementById("code");
+  try {
+    var q = new URLSearchParams(location.search).get("code");
+    if (q) box.value = q.toUpperCase();
+  } catch (e) {}
+  f.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var c = box.value.replace(/\s+/g, "").toUpperCase();
+    if (!c) { box.focus(); return; }
+    location.href = "https://apps.apple.com/redeem?ctx=offercodes&id=" + APP_ID + "&code=" + encodeURIComponent(c);
+  });
 })();
 </script>
 </body>

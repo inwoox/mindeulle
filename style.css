@@ -201,5 +201,5 @@ html[data-lang="en"] .app-head .inline { display: none !important; }
 .redeem .promo-note { margin: 8px 0 0; }
 .app-shot { display: flex; align-items: center; gap: 16px; margin-top: 16px; }
 .app-shot img { width: 38%; max-width: 150px; height: auto; flex: none; border-radius: 14px; box-shadow: 0 0 0 1px var(--line), 0 6px 18px rgba(0,0,0,.10); }
-.app-intro b { display: block; font-size: 17px; line-height: 1.5; }
-.app-more { margin: 14px 0 0; color: var(--sub); font-size: 14px; line-height: 1.65; word-break: keep-all; }
+.app-intro b { display: block; font-size: 16px; line-height: 1.5; margin-bottom: 6px; }
+.app-intro p { margin: 0; color: var(--sub); font-size: 14px; line-height: 1.6; }

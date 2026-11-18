@@ -13,9 +13,9 @@
 <meta property="og:url" content="https://inwoox.github.io/mindeulle/links/">
 <meta property="og:image" content="https://inwoox.github.io/mindeulle/img/pacegraphy.png">
 <link rel="icon" href="../img/pacegraphy.png">
-<link rel="stylesheet" href="../style.css?v=20261119c">
-<script src="../lang.js?v=20261119c"></script>
-<script src="../apps.js?v=20261119c"></script>
+<link rel="stylesheet" href="../style.css?v=20261119b">
+<script src="../lang.js?v=20261119b"></script>
+<script src="../apps.js?v=20261119b"></script>
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -116,8 +116,7 @@
     // 앱 화면이 있으면: 머리는 이름만, 아래에 화면 + 핵심 소개 두 줄 (2026-11-19)
     var desc = '<span class="ko">' + a.ko + '</span><span class="en">' + a.en + '</span>';
     var shot = a.shot ? '<div class="app-shot"><img src="../' + a.shot + '" alt="' + a.name + ' 화면" loading="lazy" width="480" height="969">' +
-      '<div class="app-intro"><b>' + desc + '</b></div></div>' +
-      '<p class="app-more"><span class="ko">' + a.introKo + '</span><span class="en">' + a.introEn + '</span></p>' : '';  // 줄바꿈을 지정한 문장이라 카드 폭 전체로
+      '<div class="app-intro"><b>' + desc + '</b><p><span class="ko">' + a.introKo + '</span><span class="en">' + a.introEn + '</span></p></div></div>' : '';
     html += '<section class="store-card" id="' + id + '">' +
       '<div class="app-head"><img src="../' + a.icon + '" alt="" width="60" height="60"><div><b>' + a.name +
       ' <span class="ko inline">' + a.nameKo + '</span></b>' + (a.shot ? '' : desc) + '</div></div>' + shot +

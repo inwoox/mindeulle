@@ -21,8 +21,8 @@ window.APPS = {
     ko: "좋은 순간만 콕 찍으면, 영상 여러 개가 하나로",
     en: "Tap the best moments. Get one video.",
     shot: "img/kokcut-shot.jpg",
-    introKo: "여러 영상을 선택하고, 영상을 합치면 알아서 작게 쪼개서 합치고, 효과를 넣습니다.",
-    introEn: "Pick several videos and merge them. It cuts them into short clips, joins them, and adds effects for you.",
+    introKo: "여러 영상을 선택하고, 영상 합치기를 누르면<br>선택된 영상들 중 일부 부분만 자동 선택하여<br>빠르게 합쳐주고, 전환이나 효과를 넣습니다.",
+    introEn: "Pick several videos and tap Merge.<br>It automatically picks short parts of each video,<br>joins them quickly, and adds transitions and effects.",
     ios: { url: "https://apps.apple.com/app/id6826712066", live: true },  // 2026-11-14 App Store 출시
     android: { url: "https://play.google.com/store/apps/details?id=com.kokcut.kokcut", live: false, test: "kokcut-test/" }
   }

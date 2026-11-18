@@ -113,9 +113,13 @@
       extra = '<a class="test-link" href="../' + a.android.test + '"><span class="ko">안드로이드 테스트에 먼저 참여하기 →</span>' +
         '<span class="en">Join the Android test first →</span></a>';
     }
+    // 앱 화면이 있으면: 머리는 이름만, 아래에 화면 + 핵심 소개 두 줄 (2026-11-19)
+    var desc = '<span class="ko">' + a.ko + '</span><span class="en">' + a.en + '</span>';
+    var shot = a.shot ? '<div class="app-shot"><img src="../' + a.shot + '" alt="' + a.name + ' 화면" loading="lazy" width="480" height="969">' +
+      '<div class="app-intro"><b>' + desc + '</b><p><span class="ko">' + a.introKo + '</span><span class="en">' + a.introEn + '</span></p></div></div>' : '';
     html += '<section class="store-card" id="' + id + '">' +
       '<div class="app-head"><img src="../' + a.icon + '" alt="" width="60" height="60"><div><b>' + a.name +
-      ' <span class="ko inline">' + a.nameKo + '</span></b><span class="ko">' + a.ko + '</span><span class="en">' + a.en + '</span></div></div>' +
+      ' <span class="ko inline">' + a.nameKo + '</span></b>' + (a.shot ? '' : desc) + '</div></div>' + shot +
       '<div class="store-row">' + order.map(function (s) { return button(s, a[s]); }).join("") + '</div>' + extra + '</section>';
   });
   document.getElementById("list").innerHTML = html;

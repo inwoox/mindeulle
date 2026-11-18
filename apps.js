@@ -9,8 +9,8 @@ window.APPS = {
     en: "Put today's run on your photos and videos with one screenshot",
     // 앱 받기 페이지 카드의 앱 화면 + 한 줄 소개 (2026-11-19)
     shot: "img/pacegraphy-shot.jpg",
-    introKo: "거리·페이스·심박이 사진 위에 바로 올라가요. 글씨·템플릿·비율도 마음대로 바꿔요.",
-    introEn: "Distance, pace and heart rate go right onto your photo. Change the font, template and ratio as you like.",
+    introKo: "거리·페이스·심박이 사진 위에 바로 올라가요.<br>글씨·템플릿·비율도 마음대로 바꿔요.",
+    introEn: "Distance, pace and heart rate go right onto your photo.<br>Change the font, template and ratio as you like.",
     ios: { url: "https://apps.apple.com/app/id6762495276", live: true },
     android: { url: "https://play.google.com/store/apps/details?id=com.inwoo.pacegraphy", live: true }
   },
@@ -21,8 +21,8 @@ window.APPS = {
     ko: "좋은 순간만 콕 찍으면, 영상 여러 개가 하나로",
     en: "Tap the best moments. Get one video.",
     shot: "img/kokcut-shot.jpg",
-    introKo: "장면마다 다듬고 효과를 넣은 뒤, 한 편의 영상으로 바로 내보내요.",
-    introEn: "Trim each clip, add effects, and export it all as one video.",
+    introKo: "여러 영상을 선택하고, 영상을 합치면 알아서 작게 쪼개서 합치고, 효과를 넣습니다.",
+    introEn: "Pick several videos and merge them. It cuts them into short clips, joins them, and adds effects for you.",
     ios: { url: "https://apps.apple.com/app/id6826712066", live: true },  // 2026-11-14 App Store 출시
     android: { url: "https://play.google.com/store/apps/details?id=com.kokcut.kokcut", live: false, test: "kokcut-test/" }
   }

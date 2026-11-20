@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>TikTok 연결 · TT Labs</title>
+<link rel="stylesheet" href="../style.css?v=20261119d">
+<style>
+  .code{font:600 15px/1.5 ui-monospace,Menlo,monospace;word-break:break-all;background:var(--card,#f3f3f1);border-radius:12px;padding:14px;margin:14px 0}
+  .btn{display:inline-block;padding:12px 18px;border-radius:12px;border:0;background:#111;color:#fff;font-weight:700;font-size:15px}
+</style>
+</head>
+<body>
+<main class="wrap policy">
+  <h1>TikTok 연결</h1>
+  <p id="msg" class="lead">TT Labs 게시 도구가 TikTok 로그인을 마치고 돌아오는 페이지예요.</p>
+  <div id="box" hidden>
+    <p>아래 코드를 복사해서 Mac 터미널의 <b>tiktok_auth</b> 창에 붙여 넣어 주세요. 몇 분 안에만 쓸 수 있어요.</p>
+    <div class="code" id="code"></div>
+    <button class="btn" id="copy" type="button">코드 복사</button>
+  </div>
+</main>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var code = q.get("code"), err = q.get("error"), state = q.get("state") || "";
+  if (err) {
+    document.getElementById("msg").textContent = "연결하지 못했어요: " + err + " " + (q.get("error_description") || "");
+    return;
+  }
+  if (!code) return;
+  var text = code + (state ? " " + state : "");
+  document.getElementById("code").textContent = text;
+  document.getElementById("box").hidden = false;
+  document.getElementById("copy").onclick = function () {
+    navigator.clipboard.writeText(text).then(function () { document.getElementById("copy").textContent = "복사했어요"; });
+  };
+  history.replaceState(null, "", location.pathname);  // 주소창에 코드가 남지 않게
+})();
+</script>
+</body>
+</html>

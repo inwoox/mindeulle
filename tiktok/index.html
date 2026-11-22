@@ -30,7 +30,7 @@
     return;
   }
   if (!code) return;
-  var text = code + (state ? " " + state : "");
+  var text = code; // 코드만 (state 를 붙이면 토큰 받기가 거절된다)
   document.getElementById("code").textContent = text;
   document.getElementById("box").hidden = false;
   document.getElementById("copy").onclick = function () {

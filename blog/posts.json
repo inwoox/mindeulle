@@ -1,16 +1,54 @@
 [
  {
   "content_id": "2026-11-23-guide-tiktok-tt_labs_",
-  "slug": "2026-11-23-tiktok-auto-upload-five-steps",
+  "slug": "2026-11-23-tiktok-auto-upload-5-steps",
   "day": "2026-11-23",
   "title": {
    "ko": "틱톡 영상 자동 업로드, 다섯 단계로 끝내기",
-   "en": "Automating TikTok Video Uploads in Five Steps"
+   "en": "TikTok Auto-Upload in Five Steps"
   },
   "summary": {
-   "ko": "틱톡 개발자 사이트에서 앱을 만들고 내 영상이 임시보관함으로 자동으로 오게 연동한 과정을 정리했어요.",
-   "en": "How I set up TikTok's developer API so my videos land in my drafts automatically."
+   "ko": "개발자 사이트에서 앱을 만들고 샌드박스 테스트를 거쳐 영상이 틱톡 임시보관함으로 바로 오게 만든 과정.",
+   "en": "How I set up videos to land straight in my TikTok drafts: create an app, test in the sandbox, and link an account."
   },
-  "cover": true
+  "cover": true,
+  "images": [
+   {
+    "src": "step-1.jpg",
+    "ko": "자동화라고 해서 절차가 복잡하지는 않지만 개인정보처리방침 페이지 등 미리 준비해야 할 것들이 좀 있었어요",
+    "en": "Automating this isn't complicated, but you need a privacy policy page and a few things ready beforehand"
+   },
+   {
+    "src": "step-2.jpg",
+    "ko": "개발자 사이트에서 앱을 하나 만들고",
+    "en": "On the developer site, create an app,"
+   },
+   {
+    "src": "step-3.jpg",
+    "ko": "약관·개인정보 페이지 주소 넣고 내 사이트 인증까지",
+    "en": "add your terms and privacy URLs, and verify your own site"
+   },
+   {
+    "src": "step-4.jpg",
+    "ko": "심사 전엔 샌드박스에서 테스트",
+    "en": "Before review, test in the sandbox"
+   },
+   {
+    "src": "step-5.jpg",
+    "ko": "권한은 '업로드' 하나만",
+    "en": "For permissions, pick just 'Upload'"
+   },
+   {
+    "src": "step-6.jpg",
+    "ko": "내 틱톡 계정 두 개를 연결하면 끝",
+    "en": "Link your two TikTok accounts and you're done"
+   },
+   {
+    "src": "step-7.jpg",
+    "ko": "이제 영상이 임시보관함으로 바로 와요 음악만 골라서 올리면 끝!",
+    "en": "Videos land right in your drafts Just pick the music and post!"
+   }
+  ],
+  "youtube": "CBe5fKAido0"
  }
 ]

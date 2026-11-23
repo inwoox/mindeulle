@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko" data-lang="ko" data-title-ko="틱톡 영상 자동 업로드, 다섯 단계로 끝내기 · 뛰뛰랩스" data-title-en="Automating TikTok Video Uploads in Five Steps · TT Labs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>틱톡 영상 자동 업로드, 다섯 단계로 끝내기 · 뛰뛰랩스</title>
+<meta name="description" content="틱톡 개발자 사이트에서 앱을 만들고 내 영상이 임시보관함으로 자동으로 오게 연동한 과정을 정리했어요.">
+<meta property="og:title" content="틱톡 영상 자동 업로드, 다섯 단계로 끝내기">
+<meta property="og:description" content="틱톡 개발자 사이트에서 앱을 만들고 내 영상이 임시보관함으로 자동으로 오게 연동한 과정을 정리했어요.">
+<meta property="og:image" content="https://inwoox.github.io/mindeulle/blog/2026-11-23-tiktok-auto-upload-five-steps/cover.jpg">
+<link rel="icon" href="../../img/kokcut.png">
+<link rel="stylesheet" href="../../style.css?v=20261119d">
+<script src="../../lang.js?v=20261119d"></script>
+<style>
+.post h1 { font-size: 28px; line-height: 1.3; margin: 6px 0 10px; }
+.post h2 { font-size: 20px; margin: 28px 0 8px; } .post h3 { font-size: 17px; margin: 20px 0 6px; }
+.post p, .post li { color: var(--sub); line-height: 1.75; } .post img.cover { display: block; width: 100%; max-width: 360px; border-radius: 14px; margin: 14px auto 6px; }
+.post .tags span { display: inline-block; margin: 0 6px 6px 0; padding: 3px 10px; border-radius: 999px; background: var(--line); font-size: 13px; }
+.post .watch a { display: inline-block; margin: 6px 10px 0 0; font-weight: 700; }
+.list a.item { display: grid; grid-template-columns: 96px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: inherit; }
+.list img { width: 96px; height: 120px; object-fit: cover; border-radius: 10px; } .list b { display: block; font-size: 17px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../../"><i></i><span class="ko">뛰뛰랩스</span><span class="en">TT Labs</span></a>
+  <nav>
+    <a href="../../blog/"><span class="ko">블로그</span><span class="en">Blog</span></a>
+    <a href="../../support/"><span class="ko">도움말</span><span class="en">Help</span></a>
+    <button class="lang-btn" type="button"><span class="ko">English</span><span class="en">한국어</span></button>
+  </nav>
+</div></header>
+<main class="wrap post">
+<article class="ko">
+<p class="eyebrow">2026-11-23</p>
+<h1>틱톡 영상 자동 업로드, 다섯 단계로 끝내기</h1>
+<p class="lead">틱톡 개발자 사이트에서 앱을 만들고 내 영상이 임시보관함으로 자동으로 오게 연동한 과정을 정리했어요.</p>
+<img class="cover" src="cover.jpg" alt="">
+<p class="watch"><a href="https://www.threads.com/@tt_labs_/post/DgFHxIZiTZs">▶ 영상으로 보기 · Threads</a><a href="https://www.instagram.com/reel/DgFH72mADll/">▶ 영상으로 보기 · Instagram</a><a href="https://youtube.com/shorts/CBe5fKAido0">▶ 영상으로 보기 · YouTube</a></p>
+<h2>왜 자동화했나</h2>
+<p>뛰뛰가 태어난 지 5일째, 저는 병원에서 아내를 돌보고 있어요. 여유 시간이랄 건 없지만 짬이 나면 노트북을 열어요. 아무리 좋은 앱이라도 일단 노출이 되어야 쓰일 수 있으니, 만든 영상을 틱톡에 자동으로 올리는 연동을 했어요.</p>
+<p>절차가 복잡하진 않아요. 다만 <strong>개인정보처리방침 페이지</strong> 같은 준비물이 미리 필요해요.</p>
+<h2>미리 준비할 것</h2>
+<ul><li>약관 페이지 주소</li><li>개인정보처리방침 페이지 주소</li><li>인증받을 내 사이트</li><li>연결할 틱톡 계정</li></ul>
+<h2>다섯 단계</h2>
+<ol><li><strong>앱 만들기</strong>: 틱톡 개발자 사이트에서 앱을 하나 만들어요.</li><li><strong>주소 넣고 사이트 인증</strong>: 약관·개인정보처리방침 주소를 넣고, 내 사이트 인증까지 마쳐요.</li><li><strong>샌드박스 테스트</strong>: 심사를 받기 전에는 샌드박스에서 테스트해요.</li><li><strong>권한 최소화</strong>: 권한은 '업로드' 하나만 골라요.</li><li><strong>계정 연결</strong>: 내 틱톡 계정을 연결하면 끝이에요.</li></ol>
+<h2>결과</h2>
+<p>이제 영상이 틱톡 임시보관함으로 바로 와요. 음악만 골라서 올리면 끝이라, 짬 시간에도 부담이 없어요.</p>
+<h2>정리</h2>
+<p>자동화 자체보다 <strong>준비물(약관·개인정보 페이지)</strong> 을 먼저 챙기는 게 가장 중요했어요. 이 페이지만 있으면 나머지는 순서대로 따라가면 됩니다.</p>
+<p>앱 받기: <a href="https://inwoox.github.io/mindeulle/links/">https://inwoox.github.io/mindeulle/links/</a></p>
+<p class="tags"><span>#tiktok</span><span>#automation</span><span>#indiedev</span><span>#devlog</span><span>#parenting</span></p>
+</article>
+<article class="en">
+<p class="eyebrow">2026-11-23</p>
+<h1>Automating TikTok Video Uploads in Five Steps</h1>
+<p class="lead">How I set up TikTok&#x27;s developer API so my videos land in my drafts automatically.</p>
+<img class="cover" src="cover.jpg" alt="">
+<p class="watch"><a href="https://www.threads.com/@tt_labs_/post/DgFHxIZiTZs">▶ Watch · Threads</a><a href="https://www.instagram.com/reel/DgFH72mADll/">▶ Watch · Instagram</a><a href="https://youtube.com/shorts/CBe5fKAido0">▶ Watch · YouTube</a></p>
+<h2>Why automate this</h2>
+<p>TT is 5 days old, and I'm at the hospital taking care of my wife. I don't have much free time, but when I get a spare moment I open my laptop. No matter how good an app is, people have to see it before they can use it, so I set up auto-upload of my videos to TikTok.</p>
+<p>The process isn't complicated, but you need a few things ready first, like a <strong>privacy policy page</strong>.</p>
+<h2>What to prepare</h2>
+<ul><li>A terms of service URL</li><li>A privacy policy URL</li><li>A site you can verify</li><li>The TikTok account you'll link</li></ul>
+<h2>The five steps</h2>
+<ol><li><strong>Create an app</strong> on the TikTok developer site.</li><li><strong>Add your URLs and verify your site</strong>: enter the terms and privacy policy URLs, then verify your own site.</li><li><strong>Test in the sandbox</strong> before the app goes through review.</li><li><strong>Keep permissions minimal</strong>: choose just the 'Upload' permission.</li><li><strong>Link your account</strong>, and you're done.</li></ol>
+<h2>The result</h2>
+<p>Videos now land right in my TikTok drafts. I just pick the music and post, which is easy to do in spare moments.</p>
+<h2>Takeaway</h2>
+<p>The hardest part wasn't the automation. It was having the <strong>terms and privacy pages</strong> ready. Once those exist, the rest is just following the steps in order.</p>
+<p>Get the app: <a href="https://inwoox.github.io/mindeulle/links/">https://inwoox.github.io/mindeulle/links/</a></p>
+<p class="tags"><span>#tiktok</span><span>#automation</span><span>#indiedev</span><span>#devlog</span><span>#parenting</span></p>
+</article>
+</main>
+<footer class="wrap muted" style="padding:40px 20px 60px">© TT Labs</footer>
+</body>
+</html>

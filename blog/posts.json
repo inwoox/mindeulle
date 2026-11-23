@@ -1,0 +1,16 @@
+[
+ {
+  "content_id": "2026-11-23-guide-tiktok-tt_labs_",
+  "slug": "2026-11-23-tiktok-auto-upload-five-steps",
+  "day": "2026-11-23",
+  "title": {
+   "ko": "틱톡 영상 자동 업로드, 다섯 단계로 끝내기",
+   "en": "Automating TikTok Video Uploads in Five Steps"
+  },
+  "summary": {
+   "ko": "틱톡 개발자 사이트에서 앱을 만들고 내 영상이 임시보관함으로 자동으로 오게 연동한 과정을 정리했어요.",
+   "en": "How I set up TikTok's developer API so my videos land in my drafts automatically."
+  },
+  "cover": true
+ }
+]

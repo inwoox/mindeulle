@@ -1,5 +1,26 @@
 [
  {
+  "content_id": "2026-11-26-report-gn37866-video-tt_labs_",
+  "slug": "2026-11-26-app-monetization-test-volume",
+  "day": "2026-11-26",
+  "title": {
+   "ko": "큰 앱과 작은 앱의 차이는 실험 횟수였어요",
+   "en": "The Difference Between Big and Small Apps Was How Often They Test"
+  },
+  "summary": {
+   "ko": "Superwall 리포트를 읽고, 혼자 앱 만드는 입장에서 느낀 점을 적었어요.",
+   "en": "I read Superwall's monetization report and wrote down what it means for a solo app maker."
+  },
+  "cover": true,
+  "images": [],
+  "youtube": "",
+  "media": "video",
+  "gallery": {
+   "ko": [],
+   "en": []
+  }
+ },
+ {
   "content_id": "2026-11-23-guide-tiktok-tt_labs_",
   "slug": "2026-11-23-tiktok-auto-upload-5-steps",
   "day": "2026-11-23",

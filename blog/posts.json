@@ -18,6 +18,10 @@
   "gallery": {
    "ko": [],
    "en": []
+  },
+  "videos": {
+   "ko": "video-ko.mp4",
+   "en": "video-en.mp4"
   }
  },
  {

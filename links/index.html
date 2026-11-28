@@ -15,7 +15,7 @@
 <link rel="icon" href="../img/pacegraphy.png">
 <link rel="stylesheet" href="../style.css?v=20261119d">
 <script src="../lang.js?v=20261119d"></script>
-<script src="../apps.js?v=20261119d"></script>
+<script src="../apps.js?v=20261128"></script>
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -97,8 +97,9 @@
   function button(store, info) {
     var mine = me === store || me === "other";
     if (!info.live) {
+      var wait = info.status === "review" ? ['심사 대기 중', 'In review'] : info.status === "prep" ? ['준비 중', 'In preparation'] : ['곧 출시', 'Coming soon'];
       return '<span class="store-btn soon">' + ICON[store] + '<span class="t">' + LABEL[store] +
-        ' · <span class="ko">곧 출시</span><span class="en">Coming soon</span></span></span>';
+        ' · <span class="ko">' + wait[0] + '</span><span class="en">' + wait[1] + '</span></span></span>';
     }
     return '<a class="store-btn' + (mine ? ' mine' : '') + '" href="' + window.storeUrl(store, info.url) +
       '" target="_blank" rel="noopener">' + ICON[store] + '<span class="t"><span class="ko">' + TEXT[store][0] +

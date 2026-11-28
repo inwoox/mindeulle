@@ -1,5 +1,5 @@
 // 앱 스토어 주소 한곳에서 관리 (links/ 페이지와 go/<앱>/ 바로가기가 같이 쓴다)
-// live: false 면 '곧 출시'로 보이고 눌리지 않는다. 출시되면 true 로만 바꾸면 된다.
+// live: false 면 '곧 출시'(status: "review" 면 '심사 대기 중', "prep" 이면 '준비 중')로 보이고 눌리지 않는다. 출시되면 true 로만 바꾸면 된다.
 window.APPS = {
   pacegraphy: {
     name: "PaceGraphy",
@@ -25,6 +25,19 @@ window.APPS = {
     introEn: "Pick several videos and tap Merge.<br>It automatically picks short parts of each video,<br>joins them quickly, and adds transitions and effects.",
     ios: { url: "https://apps.apple.com/app/id6826712066", live: true },  // 2026-11-14 App Store 출시
     android: { url: "https://play.google.com/store/apps/details?id=com.kokcut.kokcut", live: false, test: "kokcut-test/" }
+  },
+  ttlog: {
+    name: "TT Log",
+    nameKo: "뛰뛰로그",
+    icon: "img/ttlog.png",
+    ko: "수유·기저귀·수면, 잠금 화면에서 한 번에 기록",
+    en: "Log feeds, diapers and sleep from the lock screen",
+    shot: "img/ttlog-shot.jpg",
+    introKo: "마지막 수유가 몇 분 전인지 한눈에 보여요.<br>젖병을 끌어서 양을 맞추고,<br>엄마 아빠가 같은 기록을 함께 봐요.",
+    introEn: "See how long ago the last feed was.<br>Drag the bottle to set the amount,<br>and share the same log with your partner.",
+    // status: "review" 면 '심사 대기 중', "prep" 이면 '준비 중', 없으면 '곧 출시'. 출시되면 live: true 로 (2026-11-28 App Store 심사 제출)
+    ios: { url: "https://apps.apple.com/app/id6840323712", live: false, status: "review" },
+    android: { url: "https://play.google.com/store/apps/details?id=com.ttlabs.tt_log", live: false, status: "prep" }
   }
 };
 

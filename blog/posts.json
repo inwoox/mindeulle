@@ -1,5 +1,30 @@
 [
  {
+  "content_id": "2026-11-28-vlog-feeding-tt_labs_",
+  "slug": "2026-11-28-newborn-feeding-log-app",
+  "day": "2026-11-28",
+  "title": {
+   "ko": "태어난 지 10일, 수유 기록 앱을 직접 만들었어요",
+   "en": "Day 10 with our newborn, and a feeding log I built myself"
+  },
+  "summary": {
+   "ko": "분유 먹는 양이 그때그때 달라서, 꼭 필요한 기능만 담은 육아 앱을 직접 만들었어요.",
+   "en": "The amount changed every feeding, so I built a simple baby log with just what I need."
+  },
+  "cover": true,
+  "images": [],
+  "youtube": "",
+  "media": "video",
+  "gallery": {
+   "ko": [],
+   "en": []
+  },
+  "videos": {
+   "ko": "video-ko.mp4",
+   "en": "video-en.mp4"
+  }
+ },
+ {
   "content_id": "2026-11-26-report-gn37866-video-tt_labs_",
   "slug": "2026-11-26-app-monetization-test-volume",
   "day": "2026-11-26",
